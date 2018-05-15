@@ -21,7 +21,7 @@ function createMainWindow() {
 		height: 840
 	});
 
-	win.loadURL(`file://${__dirname}/app/login/index.html`);
+	win.loadURL(`file://${__dirname}/src/app/login/index.html`);
 	//win.setMenu(null);
 	win.on('closed', onClosed);
 
