@@ -1,0 +1,23 @@
+{
+  "name": "calling-electron-bootstrap",
+  "version": "0.0.1",
+  "main": "main.js",
+  "author": "Unixson",
+  "license": "MIT",
+  "repository": "https://github.com/steveunixson/calling-electron-bootstrap.git",
+  "devDependencies": {
+    "electron": "^1.7.9"
+  },
+  "scripts": {
+    "start": "electron main.js"
+  },
+  "dependencies": {
+    "config.json": "0.0.4",
+    "dotenv": "^5.0.0",
+    "https": "^1.0.0",
+    "jquery": "^3.3.1",
+    "query-string": "^6.0.0",
+    "request": "^2.85.0",
+    "superagent": "^3.8.2"
+  }
+}
