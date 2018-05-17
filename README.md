@@ -5,4 +5,4 @@
  # To start the app. (for now WIP)
 $ npm run dev
 
-Also its useless without backend! And i am going to release it soon and link it here
+Also its useless without backend! https://github.com/steveunixson/bonobo-calling-express
