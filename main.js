@@ -1,5 +1,10 @@
 'use strict';
+
+require('dotenv').config()
+
 const electron = require('electron');
+
+const {login} = require('./src/controllers/login')
 
 const app = electron.app;
 
@@ -18,7 +23,7 @@ function onClosed() {
 function createMainWindow() {
 	const win = new electron.BrowserWindow({
 		width: 1280,
-		height: 840
+    height: 840,
 	});
 
 	win.loadURL(`file://${__dirname}/src/app/login/index.html`);
@@ -41,10 +46,6 @@ app.on('activate', () => {
 });
 
 app.on('ready', () => {
-	mainWindow = createMainWindow();
+  mainWindow = createMainWindow();
+  login()
 });
-
-
-
-
-
